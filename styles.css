@@ -63,6 +63,6 @@ header {
 }
 
 header::after {
-  content:"What's new"
+  content:"What's new";
 }
 
