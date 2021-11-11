@@ -63,6 +63,6 @@ header {
 }
 
 header::after {
-  content:url("https://raw.githubusercontent.com/hexlet-components/projects-css-l1-cognitive-biases/master/images/background.png");
+  content:"What's new"
 }
 
