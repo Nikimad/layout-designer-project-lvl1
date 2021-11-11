@@ -52,3 +52,13 @@ section {
  text-align: center;
  margin: 100px 0;   
 }
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg::before {
+  content:url(https://raw.githubusercontent.com/hexlet-components/projects-css-l1-cognitive-biases/master/images/background.png);
+}
+
