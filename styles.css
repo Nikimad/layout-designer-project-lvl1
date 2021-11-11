@@ -62,7 +62,7 @@ header {
   background-size: cover;
 }
 
-.bg::before {
+.bg::after {
   content:url("https://raw.githubusercontent.com/hexlet-components/projects-css-l1-cognitive-biases/master/images/background.png");
 }
 
