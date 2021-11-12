@@ -52,15 +52,18 @@ h3 {
 section {
  max-width: 1110px;
  text-align: center;
- margin: 100px 0;   
+ margin: 100px 0;
+ border: 5px solid red;
 }
 
 header {
  position: absolute;
+ border: 5px solid black;
 }
 
 .header-head {
   text-algin: left;
+  border: 5px solid green;
 }
 
 .img-main {
@@ -68,4 +71,5 @@ header {
    height: 525px;
    top: 55px;
    right: -270px;
+   border: 5px solid blue;
 }
