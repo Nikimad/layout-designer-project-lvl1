@@ -58,6 +58,8 @@ section {
 
 header {
  position: absolute;
+ left:0;
+ top: 0;
  border: 5px solid black;
 }
 
