@@ -54,3 +54,18 @@ section {
  text-align: center;
  margin: 100px 0;   
 }
+
+header {
+ position: absolute;
+}
+
+.header-head {
+  text-algin: left;
+}
+
+.img-main {
+   position: relative;
+   height: 525px;
+   top: 55px;
+   right: -270px;
+}
