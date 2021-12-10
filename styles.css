@@ -49,6 +49,16 @@ h3 {
     font-size: 34px;
 }
 
+header::before {
+  position: absolute;
+  content: url('./projects-css-l1-cognitive-biases-master/images/background.png');
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
 section {
   position: relative;
   max-width: 1110px;
