@@ -26,7 +26,7 @@
 }
 
 .f-1 {
-    font:16px/1.6em 'Open Sans';
+    font:16px/1.6em 'Open Sans' sans-serif;
     color: var(--dark);
 }
 
@@ -49,25 +49,18 @@ h3 {
     font-size: 34px;
 }
 
-header::before {
-  position: absolute;
+section {
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.bg-img:before {
   content: url('./projects-css-l1-cognitive-biases-master/images/background.png');
-  left: 0;
-  top: 0;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
-}
-
-section {
-  position: relative;
-  max-width: 1110px;
-  margin: 100px auto;
-}
-
-.header-head {
-  font-family: 'Open Sans' sans-serif;
-  color: var(--main-color);
 }
 
 .main-img {
@@ -75,5 +68,4 @@ section {
   height: 525px;
   top: 55px;
   right: -270px;
-  z-index: -1;
 }
