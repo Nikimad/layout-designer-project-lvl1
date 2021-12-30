@@ -62,7 +62,6 @@ section {
   max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
-  border: 3px solid darksalmon;
 }
 
 .bg::before {
