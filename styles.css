@@ -25,6 +25,15 @@
   src: url('./fonts/Neucha/Neucha-Regular.ttf');
 }
 
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  overflow: hidden ;
+}
+
 .f-1 {
     font:16px/1.6em 'Open Sans' sans-serif;
     color: var(--dark);
@@ -50,13 +59,16 @@ h3 {
 }
 
 section {
-    position: relative;
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 100px 0;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+  border: 3px solid darksalmon;
 }
 
-.bg-img:before {
+.bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
   content: url('./projects-css-l1-cognitive-biases-master/images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,4 +80,19 @@ section {
   height: 525px;
   top: 55px;
   right: -270px;
+  z-index: 1;
+}
+
+.head {
+  position: relative;
+  margin: 0;
+  z-index: 2;
+}
+
+.header-text-container {
+  columns: 2;
+}
+
+.header-text-container p {
+  margin-top: 0;
 }
