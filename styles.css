@@ -27,16 +27,14 @@
 
 body {
   margin: 0;
+  background-color: var(--semitransparent-white);
+  font:16px/1.6em 'Open Sans', sans-serif;
+  color: var(--dark);
 }
 
 header {
   position: relative;
   overflow: hidden ;
-}
-
-.f-1 {
-    font:16px/1.6em 'Open Sans' sans-serif;
-    color: var(--dark);
 }
 
 h1,
@@ -92,6 +90,21 @@ section {
   columns: 2;
 }
 
-.header-text-container p {
-  margin-top: 0;
+.first-col *{
+  margin: 0;
+}
+
+.second-col {
+  break-inside: avoid;
+  margin-bottom: 50px;
+}
+
+.details {
+  position: relative;
+  font-weight: bold;
+  color: var(--white);
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: var(--main-color);
+  z-index: 1;
 }
