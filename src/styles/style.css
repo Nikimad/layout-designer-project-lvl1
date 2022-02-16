@@ -157,19 +157,19 @@ header {
 
   padding: 12px 24px;
 
-  text-transform: uppercase;
+  z-index: 1;
 
   color: var(--white);
-
-  z-index: 1;
+  
+  text-transform: uppercase;
 
   font-weight: bold;
 
   border: none;
 
-  transform: translateX(570px);
-
   background-color: var(--main);
+
+  transform: translateX(570px);
 
   cursor: pointer;
 
@@ -226,9 +226,9 @@ header {
 
   width: 350px;
 
-  text-align: left;
-
   padding: 24px;
+  
+  text-align: left;
 
   color: var(--main-dark);
 
