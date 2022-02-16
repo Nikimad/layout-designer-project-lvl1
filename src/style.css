@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+  src: url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
 }
   
 @font-face {
@@ -111,8 +111,6 @@ header {
 }
 
 .header-text-container {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -187,14 +185,13 @@ header {
   flex-direction: column;
   text-align: left;
   gap: 16px;
-  border: none;
   width: 350px;
-  height: 348px;
   background-color: var(--light);
   padding: 24px;
   color: var(--main-dark);
   cursor: pointer;
   transition: 0.3s;
+  border: none;
 }
 
 .cards-title {
@@ -202,7 +199,7 @@ header {
   color: var(--white);
   padding: 0 0 24px;
   width: 350px;
-  height: 348px;
+  height: 323px;
 }
 
 .cards-title h2 {
@@ -220,6 +217,7 @@ header {
 
 .number {
   font-size: 64px;
+  line-height: 70.5px;
   font-family: "Neucha", sans-serif;
 }
 
@@ -271,7 +269,7 @@ header {
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 400;
   color: var(--white);
   background-color: var(--brown);
   padding: 5px 10px;
