@@ -215,6 +215,7 @@ header {
 
 .card-descrp {
   font: 16px/1.6em 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .number-wrapper {
