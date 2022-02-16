@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+  src: url('assets/fonts/OpenSans-VariableFont_wdth,wght.ttf');
 }
   
 @font-face {
