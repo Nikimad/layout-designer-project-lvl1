@@ -183,7 +183,7 @@ header {
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 20px;
-  background-color: var(--dark);
+  background-color: #42413C;
   padding-top: 200px;
 }
 
