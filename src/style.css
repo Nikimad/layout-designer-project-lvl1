@@ -12,8 +12,15 @@
   
 
 @font-face {
+  font-weight: 400;
   font-family: 'Open Sans';
-  src: url('./assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+  src: url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
 }
   
 @font-face {
