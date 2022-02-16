@@ -194,12 +194,19 @@ header {
   border: none;
 }
 
+.first-row {
+  height: 323px;
+}
+
+.second-row {
+  height: 348px;
+}
+
 .cards-title {
   background-color: transparent;
   color: var(--white);
-  padding: 0 0 24px;
+  padding: 0 0 11px;
   width: 350px;
-  height: 323px;
 }
 
 .cards-title h2 {
