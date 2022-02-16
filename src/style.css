@@ -187,6 +187,7 @@ header {
   flex-direction: column;
   text-align: left;
   gap: 16px;
+  border: none;
   width: 350px;
   height: 348px;
   background-color: var(--light);
