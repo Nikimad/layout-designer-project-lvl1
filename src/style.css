@@ -243,6 +243,7 @@ header {
 
 .special-head {
   font-size: 24px;
+  line-height: 1.2;
   font-family: 'Neucha', sans-serif;
 }
 
@@ -265,11 +266,8 @@ header {
 }
 
 .section-bot {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 26px 1fr;
+  display: flex;
   column-gap: 30px;
-  row-gap: 20px;
 }
 
 .line {
@@ -280,9 +278,13 @@ header {
   color: var(--white);
   background-color: var(--brown);
   padding: 5px 10px;
+  margin-bottom: 20px;
   grid-column: 1 / span 2;
 }
 
+.section-text {
+  flex-basis: 50%;
+}
 
 .section-right {
   color: var(--white);
@@ -309,6 +311,7 @@ header {
 .afor {
   display: block;
   margin-top: 16px;
+  margin-bottom: 20px;
 }
 
 .form-container {
