@@ -364,3 +364,25 @@ header {
   margin-top: 16px;
 }
 
+
+.test-frame h2 {
+  color: var(--main);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-frame {
+  order: 3;
+}
+
+.test-frame p {
+  margin: 0.75em 0;
+}
+
+.test-frame ul {
+  margin: 16px 0;
+  padding-left: 40px;
+}
