@@ -100,7 +100,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   z-index: -1;
 
   width: 100%;
@@ -155,19 +155,19 @@ header {
 .btn {
   position: relative;
 
-  padding: 12px 24px;
-
   z-index: 1;
 
+  padding: 12px 24px;
+
   color: var(--white);
+
+  font-weight: bold;
   
   text-transform: uppercase;
 
-  font-weight: bold;
+  background-color: var(--main);
 
   border: none;
-
-  background-color: var(--main);
 
   transform: translateX(570px);
 
@@ -227,10 +227,10 @@ header {
   width: 350px;
 
   padding: 24px;
-  
-  text-align: left;
 
   color: var(--main-dark);
+
+  text-align: left;
 
   background-color: var(--light);
 
