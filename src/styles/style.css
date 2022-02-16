@@ -48,8 +48,8 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.2em;
   font-weight: 400;
+  line-height: 1.2em;
   font-family: 'Neucha', sans-serif;
 }
 
@@ -87,7 +87,7 @@ header {
 
 .container {
   width: 1440px;
-  
+
   position: relative;
   height: fit-content;
 
@@ -159,7 +159,7 @@ header {
   padding: 12px 24px;
 
   background-color: var(--main);
-  
+
   text-transform: uppercase;
   border: none;
   transform: translateX(570px);
@@ -172,9 +172,8 @@ header {
 }
 
 .btn:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
-
 
 .section-title {
   text-align: center;
@@ -209,6 +208,7 @@ header {
   row-gap: 20px;
 
   padding-top: 200px;
+
   background-color: #42413c;
 }
 
@@ -223,7 +223,7 @@ header {
   padding: 24px;
 
   color: var(--main-dark);
-  
+
   background-color: var(--light);
 
   border: none;
@@ -318,14 +318,15 @@ header {
 .line {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.2;
 
   margin-bottom: 20px;
   padding: 5px 10px;
+  
+  line-height: 1.2;
 
   color: var(--white);
   text-transform: uppercase;
-  
+
   background-color: var(--brown);
 }
 
@@ -347,7 +348,7 @@ header {
 
 .section-right .line {
   color: var(--brown);
-  
+
   background-color: var(--white);
 }
 
@@ -362,12 +363,12 @@ header {
   justify-content: space-between;
 
   padding: 55px;
-  padding-right: 117px;
-  
+
   margin-bottom: 60px;
-  
+  padding-right: 117px;
+
   color: var(--white);
-  
+
   background-color: #42413c;
 }
 
@@ -380,11 +381,13 @@ header {
 .input::placeholder {
   color: #757575;
   font: 13.1px/1.6 'Open Sans', sans-serif;
+
   opacity: 0.2;
 }
 
 .form-desc {
   margin-bottom: 9px;
+
   font-size: 18px;
 }
 
@@ -397,9 +400,9 @@ header {
 }
 
 .info {
-  font-size: 14px;
-  
   margin-top: 16px;
+  
+  font-size: 14px;
   text-align: center;
 }
 
