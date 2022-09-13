@@ -21,7 +21,7 @@
 }
 
 .body {
-    font-size: $fs;
+    font-size: $fs-m;
     font-weight: $lh-txt ;
     font-family: $ff-prim, sans-serif;
     color: $dark;
@@ -44,8 +44,49 @@
 .display-sm-none {
   display: none;
 }
+
+.bg {
+  &-light::after,
+  &-brown::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -3;
+  }
+  &-light::after {
+    background-color: $light;
+  }
+  &-brown::after {
+    background-color: $brown;
+  }
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url('../assets/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: -2;
+  }
+}
+
 @media screen and (min-width: $break-point) {
   .display-md-block {
       display: block;
+  }
+}
+
+@media screen and (min-width:$break-point-min) {
+  .body {
+    font-size: $fs;
   }
 }

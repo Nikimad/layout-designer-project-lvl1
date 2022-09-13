@@ -1,4 +1,5 @@
 //  break point
+$break-point-max: 69.375em;
 $break-point: 50em;
 $break-point-min: 30em;
 //  font-weight
@@ -18,6 +19,7 @@ $semi-dark: #908D8B;
 $brown: #B09A81;
 //  fs
 $fs: 1em;
+$fs-m: 0.75em;
 $h1: 4.5em;
 $h2: 3.75em;
 $h3: 2.125em;
@@ -39,8 +41,8 @@ $h4: 1.5em;
     &4 {
         font-size: $h4;
     }
-    @media screen and (max-width: $break-point) {
-            $h1: 2.25em;
+    @media screen and (max-width: $break-point-min) {
+            $h1: 2em;
             $h2: 2em;
             $h3: 1.5em;
             $h4: 1em;

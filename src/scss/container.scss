@@ -1,12 +1,13 @@
 .container {
-    padding: 2em;
+    padding: 2em 0.5em;
 }
 
-@media screen and (min-width: $break-point ){
+@media screen and (min-width: $break-point ) {
     .container {
         $max-width: 1110px;
         $padding: 1rem;
     
+        position: relative;
         width: min($max-width, 100% - $padding);
         margin-inline: auto;
         padding-block: 6.25em;
