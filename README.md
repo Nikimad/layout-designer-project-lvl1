@@ -2,4 +2,4 @@
 
 [Project link](https://nikimad.github.io/layout-designer-project-lvl1/src/)
 
-- no adapt
+[DEMO adaptive](https://demo-lvl1.surge.sh/)
