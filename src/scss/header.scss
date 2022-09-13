@@ -2,16 +2,14 @@
     position: relative;
     overflow: hidden;
 
-    .heading {
-        margin-top: 0;
-    }
     .even-cols {
         grid-auto-flow: row;
     }
+
     .btn {
         margin-top: 1em;
     }
-}
+};
 
 
 
@@ -19,6 +17,7 @@
     .header {
         .heading {
             margin-bottom: 13rem;
+            
                 &::after {
                     content: "";
                     position: absolute;

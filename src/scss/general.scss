@@ -35,12 +35,15 @@
 .heading {
     font-weight: $lh-heading;
     font-family: $ff-sec, sans-serif;
+    margin-block: 0 1.875rem;
 
     &-accent {
         color: $prim;
     }
 }
-
+.filter {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
 .display-sm-none {
   display: none;
 }

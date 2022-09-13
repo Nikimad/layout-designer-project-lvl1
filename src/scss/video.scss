@@ -1,0 +1,32 @@
+.video-section {
+    .container {
+        margin-top: -200px;
+
+        translate: 0 200px;
+    }
+
+    text-align: center;
+
+    .video-author {
+        margin-block: 0 1.875rem;
+    }
+
+    .video {
+        width: min(919px, 100% - 2rem);
+        height: 569px;
+    }
+}
+@media screen and (max-width: $break-point) {
+    .video-section {
+        .video {
+            height: 300px;
+        }
+    } 
+}
+@media screen and (max-width: $break-point-min) {
+    .video-section {
+        .video {
+            height: auto
+        }
+    } 
+}
