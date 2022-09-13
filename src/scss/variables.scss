@@ -1,0 +1,67 @@
+//  break point
+$break-point: 50em;
+$break-point-min: 30em;
+//  font-weight
+$fw-r: 400;
+$fw-b: 700;
+//  font-family
+$ff-prim: 'Open Sans';
+$ff-sec: 'Neucha';
+//  collors
+$light: #F5F4F0;
+$prim: #FE8A02;
+$prim-hover:#EA7600;
+$brown: #B09A81;
+$prim-dark: #42413C;
+$dark: #2A2626;
+$semi-dark: #908D8B;
+$brown: #B09A81;
+//  fs
+$fs: 1em;
+$h1: 4.5em;
+$h2: 3.75em;
+$h3: 2.125em;
+$h4: 1.5em;
+
+.h {
+    &1 {
+        font-size: $h1;
+    }
+
+    &2 {
+        font-size: $h2;
+    }
+
+    &3 {
+        font-size: $h3;
+    }
+
+    &4 {
+        font-size: $h4;
+    }
+    @media screen and (max-width: $break-point) {
+            $h1: 2.25em;
+            $h2: 2em;
+            $h3: 1.5em;
+            $h4: 1em;
+
+            &1 {
+                font-size: $h1;
+            }
+        
+            &2 {
+                font-size: $h2;
+            }
+        
+            &3 {
+                font-size: $h3;
+            }
+        
+            &4 {
+                font-size: $h4;
+            }
+    }
+}
+//  line-height
+$lh-txt: 1.6;
+$lh-heading: 1.2;
