@@ -1,4 +1,4 @@
-.cards-section {
+.nav {
     background-color: $prim-dark;
     color: #fff;
     padding-top: 24px;
@@ -56,7 +56,7 @@
 
 
 @media screen and (min-width: $break-point-min) {
-    .cards-section {
+    .nav {
         padding-top: 100px;
 
         .h2 {
