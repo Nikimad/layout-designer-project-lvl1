@@ -50,53 +50,69 @@
           <iframe class="video filter" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
         </div>
       </section>
-      <nav class="nav" id="navigator">
+      <section class="cards-section" id="navigator">
+        <h2 class="heading h2 display-sm-block display-md-none">
+          <span class="heading-accent">5 когнитивных искажений</span>
+          <br>о существовании которых стоит помнить
+        </h2>
         <div class="container">
-          <h2 class="heading h2">
-            <span class="heading-accent">5 когнитивных искажений</span>
-            <br>о существовании которых стоит помнить
-          </h2>
-
-          <a href="#ikea-effect" class="card">
-            <span class="card-number">1</span>
-            <h3 class="heading heading-accent h3">Эффект ИКЕА</h3>
-            <p>Вы переоцениваете собственные
-              решения, и, как следствие,
-              недооцениваете решения других</p>
-          </a>
-
-          <a href="#premature-optimization" class="card">
-            <span class="card-number">2</span>
-            <h3 class="heading heading-accent h3">Преждевременная оптимизация</h3>
-            <p>Вы оптимизируете что-то задолго до
-              того, как в этом появляется
-              необходимость</p>
-          </a>
-
-          <a href="#distortion-of-novelty" class="card">
-            <span class="card-number">3</span>
-            <h3 class="heading heading-accent h3">Искажение новизны</h3>
-            <p>Вы даёте более высокую оценку тем
-              событиям, которые произошли
-              недавно, и недооцениваете более
-              старые</p>
-          </a>
-
-          <a href="#hyperbolic-depreciation" class="card">
-            <span class="card-number">4</span>
-            <h3 class="heading heading-accent h3">Гиперболическое обесценивание</h3>
-            <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете
-              более крупную, недоступную сейчас,
-              но доступную в будущем.</p>
-          </a>
-
-          <a href="#errors-in-planning" class="card">
-            <span class="card-number">5</span>
-            <h3 class="heading heading-accent h3">Ошибка планирования</h3>
-            <p>Неправильно рассчитывать время
-              необходимое для завершения задачи.</p>
-          </a>
+          <input type="radio" name="navigation-slider" class="display-sm-none" id="first" checked>
+          <input type="radio" name="navigation-slider" class="display-sm-none" id="second">
+          <input type="radio" name="navigation-slider" class="display-sm-none" id="third">
+          <input type="radio" name="navigation-slider" class="display-sm-none" id="fourth">
+          <input type="radio" name="navigation-slider" class="display-sm-none" id="fifth">
+          <div class="nav-wrapper">
+            <nav class="nav position-md-static position-sm-absolute">
+              <h2 class="heading h2 display-sm-none display-md-block">
+                <span class="heading-accent">5 когнитивных искажений</span>
+                <br>о существовании которых стоит помнить
+              </h2>
+              <a href="#ikea-effect" class="card">
+                <span class="card-number">1</span>
+                <h3 class="heading heading-accent h3">Эффект ИКЕА</h3>
+                <p>Вы переоцениваете собственные
+                  решения, и, как следствие,
+                  недооцениваете решения других</p>
+              </a>
+              <a href="#premature-optimization" class="card">
+                <span class="card-number">2</span>
+                <h3 class="heading heading-accent h3">Преждевременная оптимизация</h3>
+                <p>Вы оптимизируете что-то задолго до
+                  того, как в этом появляется
+                  необходимость</p>
+              </a>
+              <a href="#distortion-of-novelty" class="card">
+                <span class="card-number">3</span>
+                <h3 class="heading heading-accent h3">Искажение новизны</h3>
+                <p>Вы даёте более высокую оценку тем
+                  событиям, которые произошли
+                  недавно, и недооцениваете более
+                  старые</p>
+              </a>
+              <a href="#hyperbolic-depreciation" class="card">
+                <span class="card-number">4</span>
+                <h3 class="heading heading-accent h3">Гиперболическое обесценивание</h3>
+                <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете
+                  более крупную, недоступную сейчас,
+                  но доступную в будущем.</p>
+              </a>
+              <a href="#errors-in-planning" class="card">
+                <span class="card-number">5</span>
+                <h3 class="heading heading-accent h3">Ошибка планирования</h3>
+                <p>Неправильно рассчитывать время
+                  необходимое для завершения задачи.</p>
+              </a>
+            </nav>
+          </div>
+          <div class="controls display-sm-flex display-md-none">
+            <label for="first"></label>
+            <label for="second"></label>
+            <label for="third"></label>
+            <label for="fourth"></label>
+            <label for="fifth"></label>
+          </div>
         </div>
-      </nav>
+      </div>
+    </div>
 </body>
 </html>

@@ -1,7 +1,10 @@
-.nav {
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $prim-dark;
     color: #fff;
-    padding-top: 24px;
+    padding-top: 32px;
 
     .h2 {
         text-align: center;
@@ -10,15 +13,24 @@
         margin: 0;
     }
 
-    .container {
+    .nav-wrapper {
+        position: relative;
+        width: 250px;
+        min-height: 245px;
+        overflow: hidden;
+        margin-inline: auto;
+    }
+
+    .nav {
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px 30px;
+        gap: 10px;
         justify-content: center;
+        transition: 0.3s;
+        transform: translateX(0);
     }
 
     .card {
-        max-width: 200px;
+        min-width: 250px;
         min-height: 245px;
         display: block;
         text-decoration: none;
@@ -52,12 +64,68 @@
             }
         }
     }
+
+    .controls {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 1rem;
+    
+        label {
+            display: block;
+            background-color: $light;
+            border-radius: 100%;
+    
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+$translate: 260px;
+
+#first:checked ~ .nav-wrapper .nav  {
+    transform: translateX(0);
+}
+
+#second:checked ~ .nav-wrapper .nav  {
+    transform: translateX(0 - $translate);
+}
+
+#third:checked ~ .nav-wrapper .nav  {
+    transform: translateX(0 - $translate * 2);
+}
+
+#fourth:checked ~ .nav-wrapper .nav  {
+    transform: translateX(0 - $translate * 3);
+}
+
+#fifth:checked ~ .nav-wrapper .nav  {
+    transform: translateX(0 - $translate * 4);
+}
+
+#first:checked ~ .controls :nth-child(1),
+#second:checked ~ .controls :nth-child(2),  
+#third:checked ~ .controls :nth-child(3),
+#fourth:checked ~ .controls :nth-child(4), 
+#fifth:checked ~ .controls :nth-child(5) {
+    background-color: $prim;
 }
 
 
-@media screen and (min-width: $break-point-min) {
-    .nav {
+@media screen and (min-width: $break-point) {
+
+    .cards-section {
         padding-top: 100px;
+
+        .nav-wrapper {
+            width: 100%;
+        }
+
+
+        .nav {
+            gap: 20px 30px;
+            flex-wrap: wrap;
+        }
 
         .h2 {
             text-align: left;
@@ -76,6 +144,14 @@
             .heading {
                 margin-bottom: 1rem;
             }
+        }
+    }
+}
+
+@media screen and (min-width: $break-point-min) {
+    .cards-section {
+        .nav-wrapper {
+            min-height: 300px;
         }
     }
 }

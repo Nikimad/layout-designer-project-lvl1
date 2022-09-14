@@ -10,7 +10,7 @@
 .h4 {
   font-size: 1.5em;
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 50em) {
   .h1 {
     font-size: 2em;
   }
@@ -71,6 +71,14 @@
   display: none;
 }
 
+.display-md-none {
+  display: none;
+}
+
+.position-sm-absolute {
+  position: absolute;
+}
+
 .bg-light::after, .bg-brown::after {
   content: "";
   display: block;
@@ -100,8 +108,19 @@
   .display-md-block {
     display: block;
   }
+  .position-md-static {
+    position: static;
+  }
   .heading {
     margin-block: 0 1.875rem;
+  }
+}
+@media screen and (max-width: 50em) {
+  .display-sm-block {
+    display: block;
+  }
+  .display-sm-flex {
+    display: flex;
   }
 }
 @media screen and (min-width: 30em) {
@@ -111,23 +130,23 @@
 }
 .container {
   padding: 2em 0.5em;
+  position: relative;
+  width: min(1110px, 100% - 1rem);
+  margin-inline: auto;
+}
+.container .even-cols {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  column-gap: 1.875em;
+}
+.container .even-cols .col {
+  display: grid;
 }
 
 @media screen and (min-width: 50em) {
   .container {
-    position: relative;
-    width: min(1110px, 100% - 1rem);
-    margin-inline: auto;
     padding: 6.25em 0;
-  }
-  .container .even-cols {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    column-gap: 1.875em;
-  }
-  .container .even-cols .col {
-    display: grid;
   }
 }
 .btn {
@@ -185,7 +204,7 @@
     background-size: 100%;
   }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 50em) {
   .header .btn {
     margin-top: 3.25rem;
   }
@@ -222,25 +241,36 @@
   height: 500px;
 }
 
-.nav {
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #42413C;
   color: #fff;
-  padding-top: 24px;
+  padding-top: 32px;
 }
-.nav .h2 {
+.cards-section .h2 {
   text-align: center;
   font-size: 1.5rem;
   max-width: 350px;
   margin: 0;
 }
-.nav .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 30px;
-  justify-content: center;
+.cards-section .nav-wrapper {
+  position: relative;
+  width: 250px;
+  min-height: 245px;
+  overflow: hidden;
+  margin-inline: auto;
 }
-.nav .card {
-  max-width: 200px;
+.cards-section .nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition: 0.3s;
+  transform: translateX(0);
+}
+.cards-section .card {
+  min-width: 250px;
   min-height: 245px;
   display: block;
   text-decoration: none;
@@ -249,45 +279,97 @@
   padding: 1rem;
   transition: 0.3s;
 }
-.nav .card-number {
+.cards-section .card-number {
   display: block;
   font-size: 2rem;
   line-height: 1.1;
   font-family: "Neucha";
   margin-bottom: 1.5rem;
 }
-.nav .card .heading {
+.cards-section .card .heading {
   margin-bottom: 0.5rem;
 }
-.nav .card p {
+.cards-section .card p {
   margin: 0;
 }
-.nav .card:hover {
+.cards-section .card:hover {
   background-color: #FE8A02;
   color: #fff;
 }
-.nav .card:hover .heading-accent {
+.cards-section .card:hover .heading-accent {
   color: #fff;
 }
+.cards-section .controls {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.cards-section .controls label {
+  display: block;
+  background-color: #F5F4F0;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
 
-@media screen and (min-width: 30em) {
-  .nav {
+#first:checked ~ .nav-wrapper .nav {
+  transform: translateX(0);
+}
+
+#second:checked ~ .nav-wrapper .nav {
+  transform: translateX(-260px);
+}
+
+#third:checked ~ .nav-wrapper .nav {
+  transform: translateX(-520px);
+}
+
+#fourth:checked ~ .nav-wrapper .nav {
+  transform: translateX(-780px);
+}
+
+#fifth:checked ~ .nav-wrapper .nav {
+  transform: translateX(-1040px);
+}
+
+#first:checked ~ .controls :nth-child(1),
+#second:checked ~ .controls :nth-child(2),
+#third:checked ~ .controls :nth-child(3),
+#fourth:checked ~ .controls :nth-child(4),
+#fifth:checked ~ .controls :nth-child(5) {
+  background-color: #FE8A02;
+}
+
+@media screen and (min-width: 50em) {
+  .cards-section {
     padding-top: 100px;
   }
-  .nav .h2 {
+  .cards-section .nav-wrapper {
+    width: 100%;
+  }
+  .cards-section .nav {
+    gap: 20px 30px;
+    flex-wrap: wrap;
+  }
+  .cards-section .h2 {
     text-align: left;
     font-size: 3.25rem;
   }
-  .nav .card {
+  .cards-section .card {
     max-width: 350px;
     padding: 1.5rem;
   }
-  .nav .card-number {
+  .cards-section .card-number {
     font-size: 4rem;
     margin-bottom: 2.5rem;
   }
-  .nav .card .heading {
+  .cards-section .card .heading {
     margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 30em) {
+  .cards-section .nav-wrapper {
+    min-height: 300px;
   }
 }
 

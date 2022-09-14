@@ -47,6 +47,12 @@
 .display-sm-none {
   display: none;
 }
+.display-md-none {
+  display: none;
+}
+.position-sm-absolute {
+  position: absolute;
+}
 
 .bg {
   &-light::after,
@@ -86,8 +92,20 @@
   .display-md-block {
       display: block;
   }
+  .position-md-static {
+    position: static;
+  }
   .heading {
     margin-block: 0 1.875rem;
+  }
+}
+
+@media screen and (max-width: $break-point) {
+  .display-sm-block {
+      display: block;
+  }
+  .display-sm-flex {
+    display: flex;
   }
 }
 
