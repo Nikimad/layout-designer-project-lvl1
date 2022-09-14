@@ -12,9 +12,8 @@
     }
 
     .video {
-        width: min(919px, 100% - 2rem);
-        max-height: 569px;
-        height: 51.262vw;
+        width: min(919px, 100%);
+        height: min(569px, 51.262vw);
     }
 }
 

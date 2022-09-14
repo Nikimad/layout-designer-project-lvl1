@@ -152,6 +152,18 @@
 .header .even-cols {
   grid-auto-flow: row;
 }
+.header .heading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 52%;
+  z-index: -1;
+  width: 16em;
+  height: 100%;
+  background-image: url("../assets/img/main.png");
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
 .header .btn {
   margin-top: 1em;
 }
@@ -170,6 +182,7 @@
     height: 100%;
     background-image: url("../assets/img/main.png");
     background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 @media screen and (min-width: 30em) {
@@ -191,9 +204,8 @@
   margin-block: 0 1rem;
 }
 .video-section .video {
-  width: min(919px, 100% - 2rem);
-  max-height: 569px;
-  height: 51.262vw;
+  width: min(919px, 100%);
+  height: min(569px, 51.262vw);
 }
 
 @media screen and (min-width: 50em) {

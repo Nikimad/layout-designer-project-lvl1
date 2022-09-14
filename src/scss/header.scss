@@ -6,6 +6,22 @@
         grid-auto-flow: row;
     }
 
+    .heading {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 52%;
+            z-index: -1;
+            width: 16em;;
+            height: 100%;
+    
+            background-image: url('../assets/img/main.png');
+            background-repeat: no-repeat;
+            background-size: 65%;
+        }
+
+    }
     .btn {
         margin-top: 1em;
     }
@@ -24,12 +40,12 @@
                     top: 5%;
                     left: 26%;
                     z-index: -1;
-            
                     width: 16em;;
                     height: 100%;
             
                     background-image: url('../assets/img/main.png');
                     background-repeat: no-repeat;
+                    background-size: 100%;
                 }
 
         }
