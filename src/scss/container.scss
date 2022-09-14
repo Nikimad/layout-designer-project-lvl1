@@ -10,7 +10,7 @@
         position: relative;
         width: min($max-width, 100% - $padding);
         margin-inline: auto;
-        padding-block: 6.25em;
+        padding: 6.25em 0;
     
         .even-cols {
             display: grid;
