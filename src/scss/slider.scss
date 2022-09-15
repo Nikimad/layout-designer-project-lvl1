@@ -1,0 +1,37 @@
+@mixin slide() {
+    $size: 260px;
+    @for $i from 1 through 5 {
+        #radio#{$i}:checked ~ .controls :nth-child(#{$i}) {
+            background-color: $prim;
+        }
+    }
+    @for $i from 1 through 5 {
+        #radio#{$i}:checked ~ .nav-wrapper .nav {
+            transform: translateX(0 - $size * ($i - 1));
+        }
+    }
+}
+
+.cards-section {
+    overflow: hidden;
+    .nav-wrapper {
+        width: 250px;
+
+        margin-inline: auto;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width: $break-point) {
+    .cards-section {
+        .nav-wrapper {
+            width: 100%;
+        }
+        .nav {
+            justify-content: center;
+        }
+    }
+}
+
+@include slide();
