@@ -20,6 +20,11 @@
   src: url('../assets/fonts/Neucha/Neucha-Regular.ttf');
 }
 
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 .body {
     font-size: $fs-m;
     font-weight: $lh-txt ;

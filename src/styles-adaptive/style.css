@@ -44,6 +44,11 @@
   font-family: "Neucha";
   src: url("../assets/fonts/Neucha/Neucha-Regular.ttf");
 }
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 .body {
   font-size: 0.75em;
   font-weight: 1.6;
