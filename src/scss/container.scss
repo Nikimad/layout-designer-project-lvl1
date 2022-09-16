@@ -20,6 +20,17 @@
     
 }
 
+
+.o {
+    &-0 {
+        order: 0;
+    }
+
+    &-1 {
+        order: 1;
+    }
+}
+
 @media screen and (min-width: $break-point) {
     .container {
         padding: 6.25em 0;

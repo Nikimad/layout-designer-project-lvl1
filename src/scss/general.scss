@@ -20,7 +20,7 @@
   src: url('../assets/fonts/Neucha/Neucha-Regular.ttf');
 }
 
-section {
+.topic {
   position: relative;
   overflow: hidden;
 }
@@ -38,13 +38,17 @@ section {
 }
 
 .heading {
-    font-weight: $lh-heading;
+    line-height: $lh-heading;
+    font-weight: $fw-r;
     font-family: $ff-sec, sans-serif;
     margin-block: 0 1rem;
 
     &-accent {
         color: $prim;
     }
+}
+.f-white {
+  color: #fff;
 }
 .filter {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));

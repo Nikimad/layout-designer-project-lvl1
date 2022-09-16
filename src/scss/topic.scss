@@ -1,0 +1,55 @@
+.topic {
+    .h4 {
+        color: $semi-white;
+        margin: 0;
+    }
+
+    .container {
+        .even-cols {
+            &:first-child {
+                margin-bottom: 6.25rem; 
+            }
+            .col {
+                height: fit-content;
+
+                p {
+                    margin-block: 1.25rem 0;
+
+                    br {
+                        line-height: 1.25rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &-accent {
+        display: block;
+
+        font-size: 0.875rem;
+        font-weight: $fw-b;
+        text-transform: uppercase;
+
+        padding: 6px 10px 4px;
+    }
+}
+
+
+.bg-light {
+    .container {
+        .topic-accent {
+            color: #fff;
+            background-color: $brown;
+        }
+    }
+}
+
+.bg-brown {
+    .container {
+        .topic-accent {
+            color: $brown;
+            background-color: #fff;
+        }
+    }
+}

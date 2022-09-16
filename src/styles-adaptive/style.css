@@ -44,7 +44,7 @@
   font-family: "Neucha";
   src: url("../assets/fonts/Neucha/Neucha-Regular.ttf");
 }
-section {
+.topic {
   position: relative;
   overflow: hidden;
 }
@@ -60,12 +60,17 @@ section {
 }
 
 .heading {
-  font-weight: 1.2;
+  line-height: 1.2;
+  font-weight: 400;
   font-family: "Neucha", sans-serif;
   margin-block: 0 1rem;
 }
 .heading-accent {
   color: #FE8A02;
+}
+
+.f-white {
+  color: #fff;
 }
 
 .filter {
@@ -149,6 +154,13 @@ section {
   display: grid;
 }
 
+.o-0 {
+  order: 0;
+}
+.o-1 {
+  order: 1;
+}
+
 @media screen and (min-width: 50em) {
   .container {
     padding: 6.25em 0;
@@ -175,6 +187,9 @@ section {
 }
 .header .even-cols {
   grid-auto-flow: row;
+}
+.header .even-cols .col p {
+  margin-bottom: 0;
 }
 .header .heading::after {
   content: "";
@@ -336,9 +351,6 @@ section {
     margin-bottom: 1rem;
   }
 }
-.cards-section {
-  overflow: hidden;
-}
 .cards-section .nav-wrapper {
   width: 250px;
   margin-inline: auto;
@@ -391,6 +403,40 @@ section {
 
 #radio5:checked ~ .nav-wrapper .nav {
   transform: translateX(-1040px);
+}
+
+.topic .h4 {
+  color: #D7CCC0;
+  margin: 0;
+}
+.topic .container .even-cols:first-child {
+  margin-bottom: 6.25rem;
+}
+.topic .container .even-cols .col {
+  height: fit-content;
+}
+.topic .container .even-cols .col p {
+  margin-block: 1.25rem 0;
+}
+.topic .container .even-cols .col p br {
+  line-height: 1.25rem;
+}
+.topic-accent {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 6px 10px 4px;
+}
+
+.bg-light .container .topic-accent {
+  color: #fff;
+  background-color: #B09A81;
+}
+
+.bg-brown .container .topic-accent {
+  color: #B09A81;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

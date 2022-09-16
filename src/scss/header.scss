@@ -4,6 +4,12 @@
 
     .even-cols {
         grid-auto-flow: row;
+
+        .col {
+            p {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .heading {
