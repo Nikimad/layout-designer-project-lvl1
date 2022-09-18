@@ -1,0 +1,38 @@
+.video-section {
+    .container {
+        margin-top: -48px;
+
+        transform: translate(0, 48px);
+    }
+
+    text-align: center;
+
+    .video-author {
+        margin-block: 0 1rem;
+    }
+
+    .video {
+        width: min(919px, 100%);
+        height: min(569px, 51.262vw);
+    }
+}
+
+@media screen and (min-width: $break-point){
+    .video-section {
+        .container {
+            margin-top: -200px;
+    
+            transform: translate(0, 200px);
+        }
+
+        .video-author {
+            margin-block: 0 1.875rem;
+        }
+    }
+}
+
+
+.test {
+    background-color: aqua;
+    height: 500px;
+}

@@ -1,0 +1,16 @@
+.btn {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    background-color: $prim;
+    border: 0;
+    font-weight: $fw-b;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $prim-hover;
+    }
+}
